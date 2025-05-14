@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.9 (Def)" />
+=======
+    <option name="sdkName" value="Python 3.10 (PythonProject6)" />
+>>>>>>> 4ed56319158e4939fa1f412215ecce21f4d3e97a
   </component>
 </project>
