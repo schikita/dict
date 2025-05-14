@@ -1,7 +1,7 @@
 def simple_shift(text):
     """Каждая буква заменяется на следующую в алфавите"""
     result = ""
-    # Ваш код здесь
+    # Ваш код здесь РЕШЕНИЕ БУДЕТ ТУТ
     return result
 
 print(simple_shift("ABC"))  # Должно вернуть "BCD"
