@@ -47,49 +47,66 @@ print(user)
 
 def merge_dicts(d1, d2):
     """Объединяет два словаря"""
-'d1' == {1}
-'d2' == {2}
-print(dict.update('d1','d2'))
+d1 = {
+    'd1': 1
+}
+d2 = {
+    'd2': 1
+}
+
+dict.update(d1, d2)
+print(d1)
 
 def check_key(d, key):
     """Проверяет, есть ли ключ в словаре"""
+    return key in d
 user = {
         'name': 'Roman',
         'surname': 'shuranov',
         'age': 16,
         'city': 'Orsha',
 }
-print = (user.keys())
+print(check_key(user, 'name'))
 
 def print_dict(d):
     """Выводит все ключи и значения словаря"""
+    print(user.keys())
+    print(user.values())
+
 keys = ['name', 'old', 'surname', 'city']
 values = ['Roman', 18, 'shuranov', 'orsha']
 user = dict(zip(keys, values))
 
-print(user)
+print_dict(user)
 
 def sum_values(d):
     """Возвращает сумму всех значений в словаре"""
+    return sum(value for value in d.values() if isinstance(value, (int, float)))
 user = {
-        'name': 'Roman',
+        'name': 100,
         'surname': 'shuranov',
         'age': 16,
         'city': 'Orsha',
 }
-return sum(d.values()) if isinstance(d, dict) else 0
-print(user)
-def max_value(d):
 
+print(sum_values(user))
+def max_value(d):
     """Возвращает максимальное значение в словаре"""
+    return max(d.values())
+
 d = {
     'one': 2,
     'two': 5,
     'three': 4,
 }
-print(max_value())
-
+print(max_value(d))
 
 def str_to_dict(s):
     """Создает словарь, где ключи — символы строки, а значения — их количество"""
-    # Твоя реализация здесь
+    return {char: s.count(char) for char in set(s)}
+
+s = "Hello"
+
+result = str_to_dict(s)
+
+print(result)
