@@ -1,31 +1,37 @@
 =======
 def create_dict(keys, values):
     """Создает словарь из списка ключей и значений"""
-    # Твоя реализация здесь
+user = {
+    'name': 'Roman',
+    'surname': 'shuranov',
+    'age': 16,
+    'city': 'Orsha',
+    'school': '№9',
+    'countre': 'Беларусь'
+
+}
+print(user)
 
 def get_value(d, key):
     """Возвращает значение по ключу или None, если ключ не найден"""
-    user = {
-        'name': 'Roman',
-        'surname': 'shuranov',
-        'age': 16,
-        'city': 'Orsha',
-        'school': '№9',
-        'countre': 'Беларусь'
-
-    }
-    print(user)
+user = {
+    'name': 'Roman',
+    'surname': 'shuranov',
+    'age': 16,
+    'city': 'Orsha',
+}
+print(user)
+print(user.get('name'))
 
 def add_to_dict(d, key, value):
     """Добавляет пару ключ-значение в словарь"""
-    user = {
-        'name': 'Roman',
-        'surname': 'shuranov',
-        'age': 16,
-        'city': 'Orsha',
-    }
-    user['city'] = ('orsha')
-    print(user)
+user = {
+    'name': 'Roman',
+    'surname': 'shuranov',
+    'age': 16,
+}
+user['city'] = ('orsha')
+print(user)
 
 def remove_from_dict(d, key):
     """Удаляет ключ из словаря"""
@@ -48,10 +54,10 @@ print(dict.update('d1','d2'))
 def check_key(d, key):
     """Проверяет, есть ли ключ в словаре"""
 user = {
-    'name': 'Roman',
-    'surname': 'shuranov',
-    'age': 16,
-    'city': 'Orsha',
+        'name': 'Roman',
+        'surname': 'shuranov',
+        'age': 16,
+        'city': 'Orsha',
 }
 print = (user.keys())
 
@@ -65,16 +71,23 @@ print(user)
 
 def sum_values(d):
     """Возвращает сумму всех значений в словаре"""
-    # Твоя реализация здесь
-
+user = {
+        'name': 'Roman',
+        'surname': 'shuranov',
+        'age': 16,
+        'city': 'Orsha',
+}
+return sum(d.values()) if isinstance(d, dict) else 0
+print(user)
 def max_value(d):
+
     """Возвращает максимальное значение в словаре"""
 d = {
     'one': 2,
     'two': 5,
     'three': 4,
 }
-print(max('one', 'two', 'three'))
+print(max_value())
 
 
 def str_to_dict(s):
